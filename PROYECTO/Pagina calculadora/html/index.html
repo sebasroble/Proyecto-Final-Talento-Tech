@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/Pagina calculadora/Css/Normalize.css">
+    <link rel="stylesheet" href="/Pagina calculadora/Css/ss.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="/Pagina calculadora/Css/style.css">
+    <title>Gasto Mensual</title>
+
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Gasto Mensual</h1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+                <div class="col ">
+                    <div class="contenido primario">
+                        <h2 class="text-center">Ingresa tus gastos a continuacion</h2>
+
+                            <form class="formulario" id="agregar-gasto" action="#">
+
+                                <div class="form-group">
+                                    <label for="gasto">Gasto:</label>
+                                    <input type="text" class="form-control" id="gasto" placeholder="Nombre Gasto (Ej: Comida,arriendo,gasolina etc.)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cantidad">Valor:</label>
+                                    <input type="number" class="form-control" id="cantidad" placeholder="Valor del gasto $">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Agregar gasto</button>
+                            </form>
+
+                    </div> <!--.contenido-->
+                </div> <!--.col-->
+
+                <div class="col">
+                    <div class="contenido secundario">
+
+                        <h2 class="text-center">Lista de gastos</h2>
+
+                        <div id="gastos">
+                            <ul class="list-group"></ul>
+                        </div>
+                        <div id="presupuesto" class="presupuesto">
+                            <div class="alert alert-primary">
+                                <p>Presupuesto: $ <span id="total"></span> </p>
+                            </div>
+                            <div class="restante alert alert-success">
+                                <p>Restante: $ <span id="restante"></span></p>
+                            </div>
+                        </div> <!--.presupuesto-->
+                    </div> <!--.contenido-->
+                </div><!--.col-->
+            </div> <!--.row-->
+        </section>
+    </div>
+
+
+    <script src="/Pagina calculadora/JavaScript/app.js"></script>
+  </body>
+  
+</html>
